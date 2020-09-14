@@ -1,0 +1,75 @@
+/* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+    
+    body {
+        display: grid;
+        place-items: center;
+    }
+    /* div,
+        section {
+            border: 1px solid black;
+        }
+         */
+    
+    #intro {
+        /* width: 100vw;
+            height: 10vh; */
+        margin: 10px;
+        display: grid;
+        grid-template-areas: "header intro-info intro-info" "member1 member2 member3" "member4 member5 member6";
+        gap: 100px;
+    }
+    /* #team {
+            /* width: 100vw;
+            height: 80vh; */
+    
+    display: grid;
+    grid-template-areas:;
+    gap: 50px;
+}
+*/ #header {
+    grid-area: header;
+    font-size: 1.6rem;
+    /* background-color: green; */
+}
+#intro-info {
+    grid-area: intro-info;
+    font-size: 1.1 rem;
+    justify-self: end;
+    /* background-color: blueviolet; */
+}
+.member {
+    display: flex;
+    width: fit-content;
+}
+.member img {
+    border-radius: 10px;
+    height: 40vh;
+}
+.job {
+    padding-left: 8px;
+    writing-mode: vertical-lr;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.8rem;
+}
+.member1 {
+    grid-area: member1;
+}
+.member2 {
+    grid-area: member2;
+}
+.member3 {
+    grid-area: member3;
+}
+.member4 {
+    grid-area: member4;
+}
+.member5 {
+    grid-area: member5;
+}
+.member6 {
+    grid-area: member6;
+}
